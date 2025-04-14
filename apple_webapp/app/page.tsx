@@ -1,103 +1,411 @@
-import Image from "next/image";
+"use client"
+import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import Image from 'next/image'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+import { CarouselPlugin } from "@/components/Home_slidehow"
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <>
+
+      <p className="text-center text-sm py-3">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on selected products with eligible cards. <Link className="text-blue-500" href="/store">Shop</Link></p>
+
+      <div className="Hero_image w-full h-screen bg-[linear-gradient(90deg,#00dbde_0%,#fc00ff_100%)] flex flex-col gap-4 justify-center items-center">
+        <h2 className="text-center text-6xl font-bold">Apple Intelligence is here</h2>
+        <p className="w-1/2 text-center text-2xl">Experience it now on the latest iPhone, iPad and Mac Model with a free software upgrade.</p>
+        <Button>
+          Learn More
+        </Button>
+      </div>
+
+      <div className="relative w-full h-[80vh] sm:h-screen overflow-hidden mt-3">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/home_iphone_hero_image.jpg"
+          alt="Hero Image"
+          fill
+          className="w-full md:w-1/2 h-auto rounded-md object-cover"
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 flex flex-col  items-center z-10 gap-3">
+          <h1 className="text-5xl text-white font-bold">iPhone 16 Pro</h1>
+          <p className="text-2xl text-white">Build for Apple Intelligence</p>
+          <div className="flex gap-4">
+            <Button>Learn More</Button>
+            <Button>Buy</Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+
+
+      <div className="relative w-full h-[80vh] sm:h-screen overflow-hidden mt-3">
+        <Image
+          src="/home_iphone2.jpg"
+          alt="Hero Image"
+          fill
+           className="w-full md:w-1/2 h-auto rounded-md object-cover"
+          priority
+        />
+
+        {/* Optional overlay content */}
+        <div className="absolute inset-0 flex flex-col  items-center z-10 gap-3">
+          <h1 className="text-5xl text-white font-bold">iPhone 16 Pro</h1>
+          <p className="text-2xl text-white">Build for Apple Intelligence</p>
+          <div className="button_container flex gap-4">
+            <Button>Learn More</Button>
+            <Button>Buy</Button>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* <div className="hero_image_2 w-full h-screen bg-black flex justify-center items-center relative mt-3" >
+        <Image className="object-cover "
+          src="/home_iphone2.jpg"
+          fill
+          alt="Picture of the author"
+        />
+      </div> */}
+
+
+      {/* grid section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4 ">
+        {/* first grid box1 */}
+        <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-5xl font-bold">Apple Watch</h2>
+            <p className="text-2xl text-md ">Series 10</p>
+            <p className="text-2xl text-md ">Thinstant Classic</p>
+            <div className="mt-7"><Button>Learn More</Button>&nbsp; &nbsp;<Button>Buy</Button></div>
+          </div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/home_appleWatch.jpg"
+            alt="Picture of the author"
+            width={900}
+            height={500}
+            className="object-cover mix-blend-multiply"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+        {/* second grid box2 */}
+        <div className="bg-gray-100  w-full p-8 text-center h-auto flex flex-col gap-20 ">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-5xl font-bold">Mac Book Air</h2>
+            <p className="text-2xl text-md ">Skyblue Coloure</p>
+            <p className="text-2xl text-md ">Sky high performance with M4</p>
+            <div className="mt-7"><Button>Learn More</Button>&nbsp; &nbsp;<Button>Buy</Button></div>
+          </div>
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/home_macbook.jpeg"
+            alt="Picture of the author"
+            width={900}
+            height={500}
+            className="object-cover mix-blend-multiply z-"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+        {/* second grid box3 */}
+        <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-4xl font-bold">iPad Air</h2>
+            <p className="text-xl text-md ">Now supercharge by the M3 chip</p>
+            <p className="text-xl text-md ">Thinstant Classic</p>
+            <div className="mt-7"><Button>Learn More</Button>&nbsp; &nbsp;<Button>Buy</Button></div>
+          </div>
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/home_ipad_image.png"
+            alt="Picture of the author"
+            width={900}
+            height={500}
+            className="object-cover mix-blend-multiply"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+        {/* second grid box4 */}
+        <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-4xl font-bold">Apple Watch</h2>
+            <p className="text-xl text-md ">M4 Max and M3 Ultra.</p>
+            <p className="text-xl text-md ">Choose your superpower.</p>
+            <div className="mt-7"><Button>Learn More</Button>&nbsp; &nbsp;<Button>Buy</Button></div>
+          </div>
+          <Image
+            src="/home_macstudio.jpg"
+            alt="Picture of the author"
+            width={900}
+            height={500}
+            className="object-cover mix-blend-multiply"
+          />
+        </div>
+        {/* second grid box5 */}
+        <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-4xl font-bold">iPad Pro</h2>
+            <p className="text-xl text-md ">Unbelievably thin. Incredibly powerful.</p>
+            {/* <p className="text-xl text-md ">Choose your superpower.</p> */}
+            <div className="mt-7"><Button>Learn More</Button>&nbsp; &nbsp;<Button>Buy</Button></div>
+          </div>
+          <Image
+            src="/home_Apple-ipad-pro-hero.jpg"
+            alt="Picture of the author"
+            width={900}
+            height={500}
+            className="object-cover mix-blend-multiply"
+          />
+
+        </div>
+        {/* second grid box6*/}
+        <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-4xl font-bold">Trade In</h2>
+            <p className="text-xl text-md ">Upgrade and save. it's that easy.</p>
+            <p className="text-xl text-md ">Choose your superpower.</p>
+            <div className="mt-7"><Button>Get your estiamge</Button></div>
+          </div>
+          <Image
+            src="/home_iPhone-trade-in.webp"
+            alt="Picture of the author"
+            width={1000}
+            height={500}
+            className="object-cover mix-blend-multiply"
+          />
+        </div>
+      </div>
+
+
+      {/*slideshow carousel */}
+      <div className="w-full h-[500px] overflow-hidden flex justify-center items-center">
+        <CarouselPlugin />
+      </div>
+
+      {/* footer section */}
+      <div className="footer w-full h-auto bg-gray-100 p-8 ">
+        <p className="text-sm text-gray-500">
+          ◊No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3-, 6-, 9- or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are available with No Cost EMI on 3- and 6-month tenures only. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms apply. <br />
+          Representative example: <br />
+          A purchase of ₹79900.00 repaid over 12 months with an interest rate of 15.99% p.a. and No Cost EMI savings of ₹6514.00 requires monthly payments of ₹6658.00. Total amount payable: ₹79900.00. <br />
+          ‡Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. <br />
+          1. Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to Chinese (Simplified), English (Australia, Canada, India, Ireland, New Zealand, Singapore, South Africa, UK or US), French, German, Italian, Japanese, Korean, Portuguese (Brazil) or Spanish, as part of an iOS 18, iPadOS 18 and macOS Sequoia software update, with more languages coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages. <br />
+          A subscription is required for Apple TV+. <br />
+          Features are subject to change. Some features, applications and services may not be available in all regions or all languages.
+        </p>
+        <hr className="border-t border-gray-300 my-4" />
+
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>Shop and Learn</AccordionTrigger>
+            <AccordionContent>
+              Store
+            </AccordionContent>
+            <AccordionContent>
+              Mac
+            </AccordionContent>
+            <AccordionContent>
+              iPad
+            </AccordionContent>
+            <AccordionContent>
+              iPhone
+            </AccordionContent>
+            <AccordionContent>
+              Watch
+            </AccordionContent>
+            <AccordionContent>
+              AirPods
+            </AccordionContent>
+            <AccordionContent>
+              TV & Home
+            </AccordionContent>
+            <AccordionContent>
+              Air Tag
+            </AccordionContent>
+            <AccordionContent>
+              Accessories
+            </AccordionContent>
+            <AccordionContent>
+              Gift Cards
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-2">
+            <AccordionTrigger>Apple Wallet</AccordionTrigger>
+            <AccordionContent>
+              Wallet
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>Account</AccordionTrigger>
+            <AccordionContent>
+              Manage Your Apple Account
+            </AccordionContent>
+            <AccordionContent>
+              Apple Store Account
+            </AccordionContent>
+            <AccordionContent>
+              iCloud.comt
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger>Entertainment</AccordionTrigger>
+            <AccordionContent>
+              Apple One
+            </AccordionContent>
+            <AccordionContent>
+              Apple TV+
+            </AccordionContent>
+            <AccordionContent>
+              Apple Music
+            </AccordionContent>
+            <AccordionContent>
+              Apple Arcade
+            </AccordionContent>
+            <AccordionContent>
+              Apple Podcasts
+            </AccordionContent>
+            <AccordionContent>
+              Apple Books
+            </AccordionContent>
+            <AccordionContent>
+              App Store
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-5">
+            <AccordionTrigger>Apple Store</AccordionTrigger>
+            <AccordionContent>
+              Find a Store
+            </AccordionContent>
+            <AccordionContent>
+              Genius Bar
+            </AccordionContent>
+            <AccordionContent>
+              Today at Apple
+            </AccordionContent>
+            <AccordionContent>
+              Group Reservations
+            </AccordionContent>
+            <AccordionContent>
+              Apple Camp
+            </AccordionContent>
+            <AccordionContent>
+              Apple Trade In
+            </AccordionContent>
+            <AccordionContent>
+              Ways to Buy
+            </AccordionContent>
+            <AccordionContent>
+              Recycling Programme
+            </AccordionContent>
+            <AccordionContent>
+              Order Status
+            </AccordionContent>
+            <AccordionContent>
+              Shopping Help
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-6">
+            <AccordionTrigger>For Buisness</AccordionTrigger>
+            <AccordionContent>
+              Apple and Business
+            </AccordionContent>
+            <AccordionContent>
+              Shop for Business
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-7">
+            <AccordionTrigger>For Education</AccordionTrigger>
+            <AccordionContent>
+              Apple and Education
+            </AccordionContent>
+            <AccordionContent>
+              Shop for Education
+            </AccordionContent>
+            <AccordionContent>
+              YShop for University
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-8">
+            <AccordionTrigger>For Healthcare</AccordionTrigger>
+            <AccordionContent>
+              Apple in Healthcare
+            </AccordionContent>
+            <AccordionContent>
+              Mac in Healthcare
+            </AccordionContent>
+            <AccordionContent>
+              Health on Apple Watch
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-9">
+            <AccordionTrigger>Apple Values</AccordionTrigger>
+            <AccordionContent>
+              Accessibility
+            </AccordionContent>
+            <AccordionContent>
+              Education
+            </AccordionContent>
+            <AccordionContent>
+              Environment
+            </AccordionContent>
+            <AccordionContent>
+              Privacy
+            </AccordionContent>
+            <AccordionContent>
+              Supply Chain
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-10">
+            <AccordionTrigger>About Apple</AccordionTrigger>
+            <AccordionContent>
+              Newsroom
+            </AccordionContent>
+            <AccordionContent>
+              Apple Leadership
+            </AccordionContent>
+            <AccordionContent>
+              Job Opportunities
+            </AccordionContent>
+            <AccordionContent>
+              Investors
+            </AccordionContent>
+            <AccordionContent>
+              Ethics & Compliance
+            </AccordionContent>
+            <AccordionContent>
+              Events
+            </AccordionContent>
+            <AccordionContent>
+              Contact Apple
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+        <p className="text-sm text-gray-500 mt-10">
+          More ways to shop: <Link className="text-blue-500" href="/store">Find an Apple Store</Link> or <Link className="text-blue-500" href="/store">other retailer</Link> near you. Or call <Link className="text-blue-500" href="/store">000800 040 1966</Link>.
+        </p>
+
+        <hr className="border-t border-gray-300 my-4" />
+
+        <div className="flex justify-between">
+          <p className="text-sm text-gray-500 mt-4">
+            Copyright © 2024 Apple Inc. All rights reserved.
+          </p>
+
+          <p className="text-sm text-gray-500 mt-4 cursor-pointer">
+            Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map
+          </p>
+
+          <p className="text-sm text-gray-500 mt-4 cursor-pointer">
+            India
+          </p>
+        </div>
+
+      </div>
+
+    </>
   );
 }
