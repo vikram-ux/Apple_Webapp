@@ -77,7 +77,6 @@ const mac = () => {
       <Buymac />
 
       {/* significant other  */}
-
       <h1 className='text-4xl md:text-6xl font-semibold mt-30 p-6'>Significant others.</h1>
       <AnimatedTestimonialsDemo />
 
@@ -108,10 +107,12 @@ const mac = () => {
             <p className="text-gray-600 text-md">The 68.29 cm (27″) 5K Retina display pairs beautifully with any Mac.</p>
             <p className="text-blue-600 text-md font-semibold mt-5">Learn more ></p>
           </div>
-          <img
+          <Image
             src="/mac_essentials2.jpg"
             alt="Second"
             className="mt-4 w-full h-auto object-cover rounded-lg"
+            width={500}
+            height={500}
           />
         </div>
       </div>
