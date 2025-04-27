@@ -58,7 +58,7 @@ const ipad = () => {
             <h2 className="text-3xl font-semibold mb-2">
               iPad pencil</h2>
             <p className="text-gray-600 text-md">Dream it up. Jot it down.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Learn more ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Learn more </p>
           </div>
           <Image
             src="/ipad-pencil.jpeg"
