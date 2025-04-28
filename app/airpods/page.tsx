@@ -64,7 +64,7 @@ const airpods = () => {
             href="#"
             className="text-blue-500 hover:text-blue-600 text-sm font-medium transition duration-300 ease-in-out"
           >
-            Learn more >
+            Learn more &gt;
           </Link>
         </div>
         {/* AirPods 4 Active Noise Cancellation */}
@@ -88,7 +88,7 @@ const airpods = () => {
             href="#"
             className="text-blue-500 hover:text-blue-600 text-sm font-medium transition duration-300 ease-in-out"
           >
-            Learn more >
+            Learn more&gt;
           </Link>
         </div>
         {/* AirPods Pro 2 */}
@@ -112,7 +112,7 @@ const airpods = () => {
             href="#"
             className="text-blue-500 hover:text-blue-600 text-sm font-medium transition duration-300 ease-in-out"
           >
-            Learn more >
+            Learn more &gt;
           </Link>
         </div>
         {/* AirPods Max */}
@@ -134,7 +134,7 @@ const airpods = () => {
             href="#"
             className="text-blue-500 hover:text-blue-600 text-sm font-medium transition duration-300 ease-in-out"
           >
-            Learn more >
+            Learn more&gt;
           </Link>
         </div>
       </div>

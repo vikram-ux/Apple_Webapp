@@ -2,7 +2,6 @@
 
 import { Tabs } from "./ui/mactabs";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { Mac_laptopcard1 } from "./Mac_laptopcard1";
 export function Mactabs() {
     const tabs = [

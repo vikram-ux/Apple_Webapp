@@ -103,7 +103,7 @@ export default function Home() {
         <div className="bg-gray-100 w-full p-8 text-center h-auto flex flex-col gap-20">
           <div className="flex flex-col gap-1">
             <h2 className="text-4xl font-bold">Trade In</h2>
-            <p className="text-xl text-md ">Upgrade and save. it's that easy.</p>
+            <p className="text-xl text-md ">Upgrade and save. its that easy.</p>
             <p className="text-xl text-md ">Choose your superpower.</p>
             <div className="mt-7"><Button>Get your estiamge</Button></div>
           </div>

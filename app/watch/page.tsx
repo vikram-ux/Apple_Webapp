@@ -40,7 +40,7 @@ const watch = () => {
 
   return (
     <>
-      <p className="text-center text-sm bg-gray-200 p-3">Get up to 12 months of No Cost EMI‡ plus ₹4000.00 instant cashback◊ on selected Apple Watch models with eligible cards. <Link className="text-blue-500" href="/store">Shop ></Link></p>
+      <p className="text-center text-sm bg-gray-200 p-3">Get up to 12 months of No Cost EMI‡ plus ₹4000.00 instant cashback◊ on selected Apple Watch models with eligible cards. <Link className="text-blue-500" href="/store">Shop &gt;</Link></p>
 
       <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-around  p-8 rounded-xl ">
         <div className="text-7xl font-bold text-gray-800 mb-4 sm:mb-0">
@@ -269,7 +269,7 @@ const watch = () => {
           <div>
             <h2 className="text-3xl font-semibold mb-2">
               show your true colours.</h2>
-            <p className="text-blue-600 text-md font-semibold mt-5">Shop Apple Watch straps ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Shop Apple Watch straps&gt;</p>
           </div>
           <Image
             src="/apple-watch-essentials1.jpg"
@@ -292,7 +292,7 @@ const watch = () => {
           <div>
             <h2 className="text-3xl font-semibold mb-2">Magic runs in the family.</h2>
             <p className="text-gray-600 text-md">Explore all AirPods models and find the best ones for you.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Learn more ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Learn more&gt;</p>
           </div>
 
         </div>
