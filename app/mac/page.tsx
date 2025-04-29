@@ -56,7 +56,7 @@ const mac = () => {
           <div className="text flex flex-col gap-4">
             <h1 className='text-7xl font-semibold'>Mac <span> does <span className='bg-blue-400 font-serif'>that.</span></span></h1>
             <p className='text-xl text-gray-700'>See how easy it is to switch to Mac.</p>
-            <Link href=""><p className='text-blue-500 text-xl'>Learn more ></p></Link>
+            <Link href=""><p className='text-blue-500 text-xl'>Learn more &gt;</p></Link>
           </div>
 
           <div className="image">
@@ -89,7 +89,7 @@ const mac = () => {
             <h2 className="text-3xl font-semibold mb-2">
               Mac accessories</h2>
             <p className="text-gray-600 text-md">Explore keyboards, mice and other essentials.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Shop Mac accessories ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Shop Mac accessories&gt;</p>
           </div>
           <Image
             src="/mac_essentials.jpg"
@@ -105,7 +105,7 @@ const mac = () => {
           <div>
             <h2 className="text-3xl font-semibold mb-2">Studio Display</h2>
             <p className="text-gray-600 text-md">The 68.29 cm (27″) 5K Retina display pairs beautifully with any Mac.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Learn more ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Learn more &gt;</p>
           </div>
           <Image
             src="/mac_essentials2.jpg"

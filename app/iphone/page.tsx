@@ -44,7 +44,7 @@ const iphone = () => {
 
   return (
     <>
-      <p className="text-center text-sm bg-gray-200 p-3">Get iPhone 16 from just ₹6325.00/mo. for up to 12 mo.‡ with No Cost EMI and instant cashback <Link className="text-blue-500" href="/store">Shop ></Link></p>
+      <p className="text-center text-sm bg-gray-200 p-3">Get iPhone 16 from just ₹6325.00/mo. for up to 12 mo.‡ with No Cost EMI and instant cashback <Link className="text-blue-500" href="/store">Shop &gt;</Link></p>
 
       <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-around  p-8 rounded-xl ">
         <div className="text-7xl font-bold text-gray-800 mb-4 sm:mb-0">
@@ -340,7 +340,7 @@ const iphone = () => {
               iPhone accessories</h2>
             <p className="text-gray-600 text-md">Explore colourful cases, USB‑C power adapters,
               MagSafe accessories and more.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Shop iPhone eccessories ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Shop iPhone eccessories&gt;</p>
           </div>
           <Image
             src="/iPhone-essentials1.jpg"
@@ -364,7 +364,7 @@ const iphone = () => {
             <h2 className="text-3xl font-semibold mb-2">AirTag</h2>
             <p className="text-gray-600 text-md">Attach one to your keys. Put another in your
               backpack. If they’re misplaced, just use the Find My app.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Buy ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Buy&gt;</p>
           </div>
 
         </div>

@@ -1,11 +1,11 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
-import { useState, useRef, useId, useEffect } from "react";
+import {type JSX, useState, useRef, useId, useEffect } from "react";
 import Image from "next/image";
 interface SlideData {
-  title: string;
-  button: string;
-  src: string;
+  title: JSX.Element | string; // Allow title to be JSX.Element or string
+  button?: string; // Optional button property
+  src: string; // Required src property
 }
 
 interface SlideProps {
@@ -20,7 +20,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   const xRef = useRef(0);
   const yRef = useRef(0);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number | null>(null);
 
   useEffect(() => {
     const animate = () => {
@@ -62,7 +62,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, button, title } = slide;
+  const { src, title } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -95,7 +95,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
-            alt={title}
+            alt={typeof title === "string" ? title : ""}
             src={src}
             onLoad={imageLoaded}
             loading="eager"
@@ -150,7 +150,17 @@ const CarouselControl = ({
     </button>
   );
 };
+// interface CarouselProps {
+//   slides: SlideData[];
+// }
 
+interface SlideData {
+  title: JSX.Element | string; // Allow title to be JSX.Element or string
+  button?: string; // Optional button property
+  src: string; // Required src property
+}
+
+// Define the CarouselProps interface
 interface CarouselProps {
   slides: SlideData[];
 }

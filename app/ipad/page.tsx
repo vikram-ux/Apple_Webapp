@@ -10,7 +10,7 @@ import { Buyipad } from '@/components/Buy-ipad'
 const ipad = () => {
   return (
     <>
-      <p className="text-center text-sm bg-gray-200 p-3">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on selected products with eligible cards. <Link className="text-blue-500" href="/store">Shop ></Link></p>
+      <p className="text-center text-sm bg-gray-200 p-3">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on selected products with eligible cards. <Link className="text-blue-500" href="/store">Shop &gt;</Link></p>
 
       <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-around  p-8 rounded-xl ">
         <div className="text-7xl font-bold text-gray-800 mb-4 sm:mb-0">
@@ -58,7 +58,7 @@ const ipad = () => {
             <h2 className="text-3xl font-semibold mb-2">
               iPad pencil</h2>
             <p className="text-gray-600 text-md">Dream it up. Jot it down.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Learn more </p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Learn more &gt</p>
           </div>
           <Image
             src="/ipad-pencil.jpeg"
@@ -81,7 +81,7 @@ const ipad = () => {
           <div>
             <h2 className="text-3xl font-semibold mb-2">Keyboard or iPad</h2>
             <p className="text-gray-600 text-md">Type it out. Take with you.</p>
-            <p className="text-blue-600 text-md font-semibold mt-5">Learn more ></p>
+            <p className="text-blue-600 text-md font-semibold mt-5">Learn more&gt;</p>
           </div>
 
         </div>

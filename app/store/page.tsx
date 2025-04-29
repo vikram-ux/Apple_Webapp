@@ -486,7 +486,7 @@ const store = () => {
                     />
 
                     <div className="absolute flex flex-col bottom-10 gap-5">
-                      <h1 className="text-xl text-black font-semibold ml-5">Mac Keyboard for iPad Air 11" (M3) - US English</h1>
+                      <h1 className="text-xl text-black font-semibold ml-5">Mac Keyboard for iPad Air 11 (M3) - US English</h1>
                       <p className="text-sm text-black  ml-5">MRP ₹26900.00 (Incl. of all taxes)</p>
 
                     </div>

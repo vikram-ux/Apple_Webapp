@@ -9,7 +9,6 @@ import AnimatedCardCarousel4 from '@/components/Accessories-card4';
 import AnimatedCardCarousel5 from '@/components/Accessories-card5';
 import AnimatedCardCarousel6 from '@/components/Accessories-card6';
 import AnimatedCardCarousel7 from '@/components/Accessories-card7';
-import { Button } from '@/components/ui/button';
 const accessories = () => {
   return (
     <>
@@ -64,7 +63,7 @@ const accessories = () => {
         {/* <!-- Box 2 --> */}
         <div className="flex flex-col gap-2 text-center p-4 w-1/5 min-w-[200px] ">
           <span className="font-semibold text-xl text-center">Ways to Buy</span>
-          <span className="text-gray-600 ">Buy the way that's right for you.</span>
+          <span className="text-gray-600 ">Buy the way thats right for you.</span>
           <span className="text-blue-500">Learn more</span>
         </div>
 
