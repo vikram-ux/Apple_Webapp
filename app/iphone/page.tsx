@@ -111,8 +111,8 @@ const iphone = () => {
               <p className="text-sm">The ultimate iPhone.</p>
               <p className="text-sm">From ₹119900.00 <br /> or ₹9825.00/mo. for 12 mo.</p>
               <div className="flex space-x-4">
-                <a href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</a>
-                <a href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</a>
+                <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</Link>
+                <Link href="/shop" className="px-4 py-2 text-blue-600 underline">Buy ›</Link>
               </div>
               <hr className="border-1 border-gray-400 my-4 ml-20 mr-20" />
               <div className="specification flex flex-col gap-16">
@@ -160,8 +160,8 @@ const iphone = () => {
               <p className="text-sm">A total powerhouse.</p>
               <p className="text-sm">From ₹79900.00 <br /> or ₹6325.00/mo. for 12 mo.</p>
               <div className="flex space-x-4">
-                <a href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</a>
-                <a href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</a>
+                <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</Link>
+                <Link href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</Link>
               </div>
               <hr className="border-1 border-gray-400 my-4 ml-20 mr-20" />
               <div className="specification flex flex-col gap-16">
@@ -209,8 +209,8 @@ const iphone = () => {
               <p className="text-sm">Latest iPhone. Greatest price.</p>
               <p className="text-sm">From ₹59900.00 <br /> or ₹4992.00/mo. for 12 mo.</p>
               <div className="flex space-x-4">
-                <a href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</a>
-                <a href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</a>
+                <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</Link>
+                <Link href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</Link>
               </div>
               <hr className="border-1 border-gray-400 my-4 ml-20 mr-20" />
               <div className="specification flex flex-col gap-16">
@@ -259,8 +259,8 @@ const iphone = () => {
               <p className="text-sm">As amazing as ever.</p>
               <p className="text-sm">From ₹69900.00* <br />or ₹5825.00/mo. for 12 mo.◊</p>
               <div className="flex space-x-4">
-                <a href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</a>
-                <a href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</a>
+                <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded-full">Learn more</Link>
+                <Link href="#" className="px-4 py-2 text-blue-600 underline">Buy ›</Link>
               </div>
               <hr className="border-1 border-gray-400 my-4 ml-20 mr-20" />
               <div className="specification flex flex-col gap-16">

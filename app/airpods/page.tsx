@@ -127,7 +127,7 @@ const airpods = () => {
           <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">AirPods Max</h2>
           <p className="text-gray-600 text-sm text-center mb-4">The ultimate over-ear listening experience.</p>
           <p className="text-xl font-bold text-gray-800 mb-4">₹59900.00*</p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out mb-2">
+          <Link href=""></Link><button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out mb-2">
             Buy
           </button>
           <Link

@@ -68,6 +68,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Search, ShoppingBag, ChevronRight } from "lucide-react";
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+
 
 const navItems = [
 
@@ -89,6 +91,7 @@ export default function AppleNavbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [bagOpen, setBagOpen] = useState(false);
 
+
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
     setBagOpen(false);
@@ -98,6 +101,8 @@ export default function AppleNavbar() {
     setBagOpen(!bagOpen);
     setSearchOpen(false);
   };
+
+
 
   return (
     <nav className="bg-gray-100 w-full  text-gray-800 py-2 flex  justify-around md:justify-center items-center sticky top-0 z-50">
@@ -138,9 +143,8 @@ export default function AppleNavbar() {
 
       {/* Search Panel */}
       <div
-        className={`absolute top-full left-0 w-full bg-gray-100 overflow-hidden transition-all duration-500 ease-in-out ${
-          searchOpen ? "opacity-100 h-96 py-6" : "opacity-0 h-0 py-0"
-        }`}
+        className={`absolute top-full left-0 w-full bg-gray-100 overflow-hidden transition-all duration-500 ease-in-out ${searchOpen ? "opacity-100 h-96 py-6" : "opacity-0 h-0 py-0"
+          }`}
       >
         <div className="relative w-full px-20">
           <Search className="absolute left-10 top-1/2 -translate-y-1/2 text-gray-500" size={28} />
@@ -163,20 +167,28 @@ export default function AppleNavbar() {
 
       {/* Bag Panel */}
       <div
-        className={`absolute top-full left-0 w-full bg-gray-100 overflow-hidden transition-all duration-500 ease-in-out ${
-          bagOpen ? "opacity-100 h-96 py-6" : "opacity-0 h-0 py-0"
-        }`}
+        className={`absolute top-full left-0 w-full bg-gray-100 overflow-hidden transition-all duration-500 ease-in-out ${bagOpen ? "opacity-100 h-96 py-6" : "opacity-0 h-0 py-0"
+          }`}
       >
         <div className="px-20 max-h-72 overflow-y-auto custom-scroll">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Bag</h2>
           <p className="text-gray-600">Your bag is currently empty.</p>
           <div className=" mt-6 space-y-1">
-          <p className="text-gray-500 text-sm font-semibold flex items-center gap-2">My Profile</p>
-          <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Orders</p>
-          <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Your Saves</p>
-          <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Accounts</p>
-          <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Sign In</p>
-        </div>
+            <p className="text-gray-500 text-sm font-semibold flex items-center gap-2">My Profile</p>
+            <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Orders</p>
+            <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Your Saves</p>
+            <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Accounts</p>
+            {/* <p className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />Sign In</p> */}
+            <div className="text-gray-800 text-sm flex items-center gap-2 font-semibold"><ChevronRight size={20} />
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </div>
+
+          </div>
         </div>
       </div>
     </nav>
